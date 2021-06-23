@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-const filmPage = ({ film }) => {
+const FilmPage = ({ film }) => {
   const router = useRouter()
   const {id} = router.query
   return(
@@ -38,4 +38,4 @@ export const getStaticPaths = async () => {
   }
 }
 
-export default filmPage
+export default FilmPage

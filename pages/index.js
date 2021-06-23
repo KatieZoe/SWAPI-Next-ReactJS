@@ -11,7 +11,7 @@ export default function Home({ films }) {
         <title> Starwars Fan Site </title>
         <meta name="keywords" content="starwars, sci-fi, fantasy"/>
       </Head>
-      <FilmList films={ films }/>
+      <FilmList key={ films } films={ films }/>
     </div>
   )
 }

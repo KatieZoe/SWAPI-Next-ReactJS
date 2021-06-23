@@ -6,7 +6,7 @@ const FilmList = ({ films }) => {
   return(
     <div className={ filmStyles.grid }>
       { films.results.map((film) => (
-        <Film film={ film } />
+        <Film key={ film } film={ film } />
       )) }
     </div>
   )
