@@ -8,10 +8,15 @@ const Layout = ({ children }) => {
     <>
     <Nav />
     <div className={ styles.container }>
-      <main className={ styles.main }>
-        <Header />
-        { children  }
-      </main>
+      <section class="galaxy-header">
+        <div className="galaxy">
+             <div className="stars"></div>
+         </div>
+        <main className={ styles.main }>
+          <Header />
+          { children  }
+        </main>
+      </section>
     </div>
     </>
   )

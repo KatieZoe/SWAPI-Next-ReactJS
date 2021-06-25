@@ -3,11 +3,13 @@ import filmStyles from '../styles/Films.module.css'
 
 
 const Film = ({ film }) => {
+  let id = film.url[film.url.length -2];
+  // console.log(id)
+
   return (
-    <Link href='/film/[id]' as={ `film/${ film.episode_id}` }>
-      <a className={ filmStyles.card }>
+    <Link href='/films/[id]/' as={ `/films/${ id }/` }>
+      <a>
         <h3> { film.title } &rarr; </h3>
-          <p> More info coming soon... </p>
       </a>
     </Link>
   )

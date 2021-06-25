@@ -2,8 +2,7 @@ import Head from 'next/head';
 import FilmList from '../components/filmList'
 
 export default function Home({ films }) {
-
-    console.log(films)
+  console.log(films)
 
   return (
     <div>
@@ -11,7 +10,7 @@ export default function Home({ films }) {
         <title> Starwars Fan Site </title>
         <meta name="keywords" content="starwars, sci-fi, fantasy"/>
       </Head>
-      <FilmList key={ films } films={ films }/>
+      <FilmList films={ films }/>
     </div>
   )
 }
